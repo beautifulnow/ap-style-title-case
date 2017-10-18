@@ -1,6 +1,6 @@
 const stopwords = 'a an and at but by for in nor of on or so the to up yet'.split(' ')
 
-function titleCase (str) {
+export function titleCase (str) {
   if (!str) return null
   if (!str.length) return null
   var words = str.trim().split(/\s+/)
@@ -15,8 +15,6 @@ function titleCase (str) {
     .join(' ')
 }
 
-function capitalize (str) {
+export function capitalize (str) {
   return str.charAt(0).toUpperCase() + str.slice(1)
 }
-
-module.exports = titleCase
